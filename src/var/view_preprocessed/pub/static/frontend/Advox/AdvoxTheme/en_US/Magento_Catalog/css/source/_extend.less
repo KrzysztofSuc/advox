@@ -1,0 +1,46 @@
+.mark-favourite {
+    .mark-favourite-btn {
+        width: 100%;
+
+        &.active {
+            background: #53a828;
+            border-color: #53a828;
+        }
+    }
+}
+
+.product-items {
+    .swatch-attribute {
+        .swatch-attribute-options:has(.text) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .text {
+            border-radius: 8px;
+
+            &.swatch-option {
+                border: unset;
+                box-shadow: none;
+                text-align: left;
+                padding-left: 16px;
+
+                &.selected {
+                    outline: unset;
+                    background: #949494;
+                    color: #ffffff;
+
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+
+                &:hover {
+                    color: #949494;
+                    outline: unset;
+                }
+            }
+        }
+    }
+}
+

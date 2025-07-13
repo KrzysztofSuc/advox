@@ -1,0 +1,18 @@
+<?php
+/**
+ * @var \Magento\Framework\Escaper $escaper
+ */
+$product = $this->getData('product') ?? null;
+?>
+<div class="mark-favourite">
+    <button class="action-primary mark-favourite-btn" data-product-id="<?php echo $product->getSku(); ?>">
+        <?= $escaper->escapeHtml(__('Mark as Favourite')) ?>
+    </button>
+</div>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "favouritesButton": {}
+        }
+    }
+</script>
