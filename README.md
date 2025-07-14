@@ -6,3 +6,9 @@
 6. And run "bin/magento i:rei" to refresh products
 
 If after these steps project does not work, you can try copying the Advox folder and running it in the working project.
+
+Local url: m2.test
+
+Access to docker administration panel:
+Username: john.smith
+Password: password123
